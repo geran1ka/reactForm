@@ -51,7 +51,7 @@ export const Form = () => {
               message: 'Не безопасный пароль',
             }
           })}
-
+          aria-invalid={!!errors.password}
         />
         {errors.password && <p className={_.error}>{errors.password.message}</p>}
       </div>
